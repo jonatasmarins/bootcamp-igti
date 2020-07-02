@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div> 
+        <div>
+            <label>(R) Vermelho: </label>
+            <input type="range" id="rangeVermelhoID" max="255" min="0" step="1" value="0" onchange="getValueRange(this.value, 'txtVermelhoID')">
+            <input type="text" id="txtVermelhoID" disabled>
+        </div>
+
+        <div>
+            <label>(G) Verde: </label>
+            <input type="range" id="rangeVerdeID" max="255" min="0" value="0" onchange="getValueRange(this.value, 'txtVerdeID')">
+            <input type="text" id="txtVerdeID" disabled>
+        </div>
+
+        <div>
+            <label>(B) Blue: </label>
+            <input type="range" id="rangeAzulID" max="255" min="0" value="0" onchange="getValueRange(this.value, 'txtAzulID')">
+            <input type="text" id="txtAzulID" disabled>
+        </div>
+
+        <div class="area-color">
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
